@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B58E734E15B43AC000A9BFE5 /* CustomFace.xib in Resources */ = {isa = PBXBuildFile; fileRef = B58E733D15B43AC000A9BFE5 /* CustomFace.xib */; };
+		B58E734F15B43AC000A9BFE5 /* GradientFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = B58E733F15B43AC000A9BFE5 /* GradientFaceView.m */; };
+		B58E735015B43AC000A9BFE5 /* DC3DAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B58E734115B43AC000A9BFE5 /* DC3DAppDelegate.m */; };
+		B58E735215B43AC000A9BFE5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B58E734415B43AC000A9BFE5 /* Credits.rtf */; };
+		B58E735315B43AC000A9BFE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B58E734615B43AC000A9BFE5 /* InfoPlist.strings */; };
+		B58E735415B43AC000A9BFE5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B58E734815B43AC000A9BFE5 /* MainMenu.xib */; };
+		B58E735515B43AC000A9BFE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B58E734A15B43AC000A9BFE5 /* main.m */; };
+		B58E735715B43AC000A9BFE5 /* img_test.png in Resources */ = {isa = PBXBuildFile; fileRef = B58E734D15B43AC000A9BFE5 /* img_test.png */; };
+		B58E735D15B43B7300A9BFE5 /* icons.icns in Resources */ = {isa = PBXBuildFile; fileRef = B58E734C15B43AC000A9BFE5 /* icons.icns */; };
+		B58E736915B43BE400A9BFE5 /* DC3DFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58E736115B43BE400A9BFE5 /* DC3DFaceViewController.m */; };
+		B58E736A15B43BE400A9BFE5 /* DC3DSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58E736315B43BE400A9BFE5 /* DC3DSceneViewController.m */; };
+		B58E736B15B43BE400A9BFE5 /* DC3DFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = B58E736615B43BE400A9BFE5 /* DC3DFaceView.m */; };
+		B58E736C15B43BE400A9BFE5 /* DC3DSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = B58E736815B43BE400A9BFE5 /* DC3DSceneView.m */; };
+		B58E736F15B440E400A9BFE5 /* GreySceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = B58E736E15B440E400A9BFE5 /* GreySceneView.m */; };
+		B5BD0A0015AECA41007A7F4B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BD09FF15AECA41007A7F4B /* Cocoa.framework */; };
+		B5BD0A4415AEDF28007A7F4B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BD0A4315AEDF28007A7F4B /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B58E733D15B43AC000A9BFE5 /* CustomFace.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomFace.xib; sourceTree = "<group>"; };
+		B58E733E15B43AC000A9BFE5 /* GradientFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientFaceView.h; sourceTree = "<group>"; };
+		B58E733F15B43AC000A9BFE5 /* GradientFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientFaceView.m; sourceTree = "<group>"; };
+		B58E734015B43AC000A9BFE5 /* DC3DAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC3DAppDelegate.h; sourceTree = "<group>"; };
+		B58E734115B43AC000A9BFE5 /* DC3DAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC3DAppDelegate.m; sourceTree = "<group>"; };
+		B58E734215B43AC000A9BFE5 /* DC3DViewsExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DC3DViewsExample-Info.plist"; sourceTree = "<group>"; };
+		B58E734315B43AC000A9BFE5 /* DC3DViewsExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DC3DViewsExample-Prefix.pch"; sourceTree = "<group>"; };
+		B58E734515B43AC000A9BFE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B58E734715B43AC000A9BFE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B58E734915B43AC000A9BFE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B58E734A15B43AC000A9BFE5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B58E734C15B43AC000A9BFE5 /* icons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icons.icns; sourceTree = "<group>"; };
+		B58E734D15B43AC000A9BFE5 /* img_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_test.png; sourceTree = "<group>"; };
+		B58E736015B43BE400A9BFE5 /* DC3DFaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC3DFaceViewController.h; sourceTree = "<group>"; };
+		B58E736115B43BE400A9BFE5 /* DC3DFaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC3DFaceViewController.m; sourceTree = "<group>"; };
+		B58E736215B43BE400A9BFE5 /* DC3DSceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC3DSceneViewController.h; sourceTree = "<group>"; };
+		B58E736315B43BE400A9BFE5 /* DC3DSceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC3DSceneViewController.m; sourceTree = "<group>"; };
+		B58E736515B43BE400A9BFE5 /* DC3DFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC3DFaceView.h; sourceTree = "<group>"; };
+		B58E736615B43BE400A9BFE5 /* DC3DFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC3DFaceView.m; sourceTree = "<group>"; };
+		B58E736715B43BE400A9BFE5 /* DC3DSceneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC3DSceneView.h; sourceTree = "<group>"; };
+		B58E736815B43BE400A9BFE5 /* DC3DSceneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC3DSceneView.m; sourceTree = "<group>"; };
+		B58E736D15B440E400A9BFE5 /* GreySceneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreySceneView.h; sourceTree = "<group>"; };
+		B58E736E15B440E400A9BFE5 /* GreySceneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreySceneView.m; sourceTree = "<group>"; };
+		B5BD09FB15AECA41007A7F4B /* DC3DViewsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DC3DViewsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BD09FF15AECA41007A7F4B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B5BD0A0215AECA41007A7F4B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B5BD0A0315AECA41007A7F4B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B5BD0A0415AECA41007A7F4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5BD0A4315AEDF28007A7F4B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5BD09F815AECA41007A7F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5BD0A4415AEDF28007A7F4B /* QuartzCore.framework in Frameworks */,
+				B5BD0A0015AECA41007A7F4B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B58E733B15B43AC000A9BFE5 /* DC3DViewsExample */ = {
+			isa = PBXGroup;
+			children = (
+				B58E733C15B43AC000A9BFE5 /* Classes */,
+				B58E734015B43AC000A9BFE5 /* DC3DAppDelegate.h */,
+				B58E734115B43AC000A9BFE5 /* DC3DAppDelegate.m */,
+				B58E734815B43AC000A9BFE5 /* MainMenu.xib */,
+				B58E734B15B43AC000A9BFE5 /* Resources */,
+				B58E735C15B43AE700A9BFE5 /* Supporting Files */,
+			);
+			path = DC3DViewsExample;
+			sourceTree = SOURCE_ROOT;
+		};
+		B58E733C15B43AC000A9BFE5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B58E733E15B43AC000A9BFE5 /* GradientFaceView.h */,
+				B58E733F15B43AC000A9BFE5 /* GradientFaceView.m */,
+				B58E733D15B43AC000A9BFE5 /* CustomFace.xib */,
+				B58E736D15B440E400A9BFE5 /* GreySceneView.h */,
+				B58E736E15B440E400A9BFE5 /* GreySceneView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B58E734B15B43AC000A9BFE5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B58E734C15B43AC000A9BFE5 /* icons.icns */,
+				B58E734D15B43AC000A9BFE5 /* img_test.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B58E735C15B43AE700A9BFE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B58E734215B43AC000A9BFE5 /* DC3DViewsExample-Info.plist */,
+				B58E734315B43AC000A9BFE5 /* DC3DViewsExample-Prefix.pch */,
+				B58E734415B43AC000A9BFE5 /* Credits.rtf */,
+				B58E734615B43AC000A9BFE5 /* InfoPlist.strings */,
+				B58E734A15B43AC000A9BFE5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B58E735E15B43BE400A9BFE5 /* DC3DViews */ = {
+			isa = PBXGroup;
+			children = (
+				B58E735F15B43BE400A9BFE5 /* Controllers */,
+				B58E736415B43BE400A9BFE5 /* Views */,
+			);
+			path = DC3DViews;
+			sourceTree = "<group>";
+		};
+		B58E735F15B43BE400A9BFE5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B58E736015B43BE400A9BFE5 /* DC3DFaceViewController.h */,
+				B58E736115B43BE400A9BFE5 /* DC3DFaceViewController.m */,
+				B58E736215B43BE400A9BFE5 /* DC3DSceneViewController.h */,
+				B58E736315B43BE400A9BFE5 /* DC3DSceneViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B58E736415B43BE400A9BFE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B58E736515B43BE400A9BFE5 /* DC3DFaceView.h */,
+				B58E736615B43BE400A9BFE5 /* DC3DFaceView.m */,
+				B58E736715B43BE400A9BFE5 /* DC3DSceneView.h */,
+				B58E736815B43BE400A9BFE5 /* DC3DSceneView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5BD09F015AECA40007A7F4B = {
+			isa = PBXGroup;
+			children = (
+				B58E735E15B43BE400A9BFE5 /* DC3DViews */,
+				B58E733B15B43AC000A9BFE5 /* DC3DViewsExample */,
+				B5BD09FE15AECA41007A7F4B /* Frameworks */,
+				B5BD09FC15AECA41007A7F4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5BD09FC15AECA41007A7F4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD09FB15AECA41007A7F4B /* DC3DViewsExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5BD09FE15AECA41007A7F4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD0A4315AEDF28007A7F4B /* QuartzCore.framework */,
+				B5BD09FF15AECA41007A7F4B /* Cocoa.framework */,
+				B5BD0A0115AECA41007A7F4B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5BD0A0115AECA41007A7F4B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD0A0215AECA41007A7F4B /* AppKit.framework */,
+				B5BD0A0315AECA41007A7F4B /* CoreData.framework */,
+				B5BD0A0415AECA41007A7F4B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5BD09FA15AECA41007A7F4B /* DC3DViewsExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5BD0A1915AECA41007A7F4B /* Build configuration list for PBXNativeTarget "DC3DViewsExample" */;
+			buildPhases = (
+				B5BD09F715AECA41007A7F4B /* Sources */,
+				B5BD09F815AECA41007A7F4B /* Frameworks */,
+				B5BD09F915AECA41007A7F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DC3DViewsExample;
+			productName = 3DExperiment2;
+			productReference = B5BD09FB15AECA41007A7F4B /* DC3DViewsExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5BD09F215AECA40007A7F4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DC3D;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B5BD09F515AECA40007A7F4B /* Build configuration list for PBXProject "DC3DViewsExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B5BD09F015AECA40007A7F4B;
+			productRefGroup = B5BD09FC15AECA41007A7F4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5BD09FA15AECA41007A7F4B /* DC3DViewsExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5BD09F915AECA41007A7F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58E734E15B43AC000A9BFE5 /* CustomFace.xib in Resources */,
+				B58E735215B43AC000A9BFE5 /* Credits.rtf in Resources */,
+				B58E735315B43AC000A9BFE5 /* InfoPlist.strings in Resources */,
+				B58E735415B43AC000A9BFE5 /* MainMenu.xib in Resources */,
+				B58E735715B43AC000A9BFE5 /* img_test.png in Resources */,
+				B58E735D15B43B7300A9BFE5 /* icons.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5BD09F715AECA41007A7F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58E734F15B43AC000A9BFE5 /* GradientFaceView.m in Sources */,
+				B58E735015B43AC000A9BFE5 /* DC3DAppDelegate.m in Sources */,
+				B58E735515B43AC000A9BFE5 /* main.m in Sources */,
+				B58E736915B43BE400A9BFE5 /* DC3DFaceViewController.m in Sources */,
+				B58E736A15B43BE400A9BFE5 /* DC3DSceneViewController.m in Sources */,
+				B58E736B15B43BE400A9BFE5 /* DC3DFaceView.m in Sources */,
+				B58E736C15B43BE400A9BFE5 /* DC3DSceneView.m in Sources */,
+				B58E736F15B440E400A9BFE5 /* GreySceneView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B58E734415B43AC000A9BFE5 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B58E734515B43AC000A9BFE5 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B58E734615B43AC000A9BFE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B58E734715B43AC000A9BFE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B58E734815B43AC000A9BFE5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B58E734915B43AC000A9BFE5 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5BD0A1715AECA41007A7F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B5BD0A1815AECA41007A7F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B5BD0A1A15AECA41007A7F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DC3DViewsExample/DC3DViewsExample-Prefix.pch";
+				INFOPLIST_FILE = "DC3DViewsExample/DC3DViewsExample-Info.plist";
+				PRODUCT_NAME = DC3DViewsExample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5BD0A1B15AECA41007A7F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DC3DViewsExample/DC3DViewsExample-Prefix.pch";
+				INFOPLIST_FILE = "DC3DViewsExample/DC3DViewsExample-Info.plist";
+				PRODUCT_NAME = DC3DViewsExample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5BD09F515AECA40007A7F4B /* Build configuration list for PBXProject "DC3DViewsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5BD0A1715AECA41007A7F4B /* Debug */,
+				B5BD0A1815AECA41007A7F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5BD0A1915AECA41007A7F4B /* Build configuration list for PBXNativeTarget "DC3DViewsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5BD0A1A15AECA41007A7F4B /* Debug */,
+				B5BD0A1B15AECA41007A7F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5BD09F215AECA40007A7F4B /* Project object */;
+}

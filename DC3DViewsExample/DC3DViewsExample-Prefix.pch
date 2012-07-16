@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'DC3DViews' target in the 'DC3DViews' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
