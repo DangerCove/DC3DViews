@@ -22,6 +22,7 @@ Notice: this is not a perfect implementation of a 3D cube shaped user interface 
 
 ## Hooking up the 3D scene to your code
 
+* Add the QuartzCore framework to your project;
 * Import the 'Scene View Controller' in your header file:
 
 `#import "DC3DSceneViewController.h"`
