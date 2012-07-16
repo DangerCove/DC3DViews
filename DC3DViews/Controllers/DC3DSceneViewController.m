@@ -69,6 +69,8 @@
     // Back
     if(back) {
         _backFaceViewController = back;
+        [self.view addSubview:_backFaceViewController.view];
+        [self rotate:_backFaceViewController withX:0.0f andY:0.0f];
     }
     
     // Top
