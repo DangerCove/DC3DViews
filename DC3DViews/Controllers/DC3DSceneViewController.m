@@ -24,7 +24,7 @@
     // Set the distance
     transform.m34 = 1.0 / -2300;
     // Move away, to we rotate from the center of the cube
-    transform = CATransform3DTranslate(transform, 0.0f, 0.0f, -(layer.bounds.size.width / 2));
+    transform = CATransform3DTranslate(transform, 0.0f, 0.0f, -(layer.bounds.size.height / 2));
     // Translate x
     transform = CATransform3DRotate(transform, x * M_PI / 180.0f, 1.0f, 0.0f, 0.0f);
     // Translate y
@@ -32,7 +32,7 @@
     // Apply the standard offset of the face
     transform = CATransform3DRotate(transform, viewController.transformOffset.angle * M_PI / 180.0f, viewController.transformOffset.x, viewController.transformOffset.y, viewController.transformOffset.z);
     // Move back to the center of the view
-    transform = CATransform3DTranslate(transform, 0.0f, 0.0f, (layer.bounds.size.width / 2));
+    transform = CATransform3DTranslate(transform, 0.0f, 0.0f, (layer.bounds.size.height / 2));
     // Apply the translation
     [layer setTransform:transform];
 }
@@ -93,6 +93,7 @@
     [self rotate:_frontFaceViewController withX:0.0f andY:0.0f];
     [self rotate:_leftFaceViewController withX:0.0f andY:0.0f];        
     [self rotate:_rightFaceViewController withX:0.0f andY:0.0f];        
+    [self rotate:_backFaceViewController withX:0.0f andY:0.0f];        
     [self rotate:_topFaceViewController withX:0.0f andY:0.0f];        
     [self rotate:_bottomFaceViewController withX:0.0f andY:0.0f];
 }
@@ -102,6 +103,7 @@
     [self rotate:_frontFaceViewController withX:x andY:y];
     [self rotate:_leftFaceViewController withX:x andY:y];        
     [self rotate:_rightFaceViewController withX:x andY:y];        
+    [self rotate:_backFaceViewController withX:x andY:y];        
     [self rotate:_topFaceViewController withX:x andY:y];        
     [self rotate:_bottomFaceViewController withX:x andY:y];
 }

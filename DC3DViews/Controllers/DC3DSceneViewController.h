@@ -11,9 +11,9 @@
 
 @interface DC3DSceneViewController : NSViewController {
     DC3DFaceViewController *_frontFaceViewController;
-    DC3DFaceViewController *_backFaceViewController;
     DC3DFaceViewController *_leftFaceViewController;
     DC3DFaceViewController *_rightFaceViewController;
+    DC3DFaceViewController *_backFaceViewController;
     DC3DFaceViewController *_topFaceViewController;
     DC3DFaceViewController *_bottomFaceViewController;
 }
