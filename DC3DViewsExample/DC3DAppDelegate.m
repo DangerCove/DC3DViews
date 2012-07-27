@@ -17,6 +17,8 @@
 #define VERT_ANGLE 20.0f
 #define HOR_ANGLE 15.0f
 #define CUBE_FACE_SIZE 480.0f
+#define CUBE_ROTATION_DURATION 0.2f
+#define CUBE_RESET_DURATION 1.0f
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -40,7 +42,7 @@
     // Get the top face from a .xib
     DC3DFaceViewController *topFaceViewController = [[DC3DFaceViewController alloc] initWithNibName:@"CustomFace" bundle:nil andPosition:DC3DFACE_TOP];
     [topFaceViewController.view setFrame:faceRect]; // Set the frame so the x,y coordinates match up
-    
+
     // Create a new cube
     [_sceneController setupCubeWithFront:frontFaceViewController    // Front face controller we just made
                                     left:leftFaceViewController     // Left face controller we just made
@@ -60,22 +62,22 @@
 
 // Some transformations, hooked up to the interface
 - (IBAction)reset:(id)sender {
-    [_sceneController resetTransforms];
+    [_sceneController resetTransformsWithDuration:CUBE_RESET_DURATION];
 }
 - (IBAction)rotateAngled:(id)sender {
-    [_sceneController rotateWithX:30.0f andY:20.0f];
+    [_sceneController rotateWithX:30.0f andY:20.0f duration:CUBE_ROTATION_DURATION];
 }
 - (IBAction)rotateUp:(id)sender {
-    [_sceneController rotateWithX:-VERT_ANGLE andY:0.0f];
+    [_sceneController rotateWithX:-VERT_ANGLE andY:0.0f duration:CUBE_ROTATION_DURATION];
 }
 - (IBAction)rotateDown:(id)sender {
-    [_sceneController rotateWithX:VERT_ANGLE andY:0.0f];
+    [_sceneController rotateWithX:VERT_ANGLE andY:0.0f duration:CUBE_ROTATION_DURATION];
 }
 - (IBAction)rotateRight:(id)sender {
-    [_sceneController rotateWithX:0.0f andY:HOR_ANGLE];
+    [_sceneController rotateWithX:0.0f andY:HOR_ANGLE duration:CUBE_ROTATION_DURATION];
 }
 - (IBAction)rotateLeft:(id)sender {
-    [_sceneController rotateWithX:0.0f andY:-HOR_ANGLE];
+    [_sceneController rotateWithX:0.0f andY:-HOR_ANGLE duration:CUBE_ROTATION_DURATION];
 }
 
 @end

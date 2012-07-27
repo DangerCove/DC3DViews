@@ -24,7 +24,10 @@
                       back:(DC3DFaceViewController *)back
                        top:(DC3DFaceViewController *)top
                     bottom:(DC3DFaceViewController *)bottom;
+
+- (void)resetTransformsWithDuration:(float)duration;
 - (void)resetTransforms;
+- (void)rotateWithX:(float)x andY:(float)y duration:(float)duration;
 - (void)rotateWithX:(float)x andY:(float)y;
 
 @end

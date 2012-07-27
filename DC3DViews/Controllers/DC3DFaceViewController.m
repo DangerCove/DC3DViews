@@ -18,51 +18,47 @@
 
 // Apply the standard position
 - (void)setPosition:(int)thePosition {
+    DC3DTransform offset;
     switch(thePosition) {
         case DC3DFACE_FRONT:
             self.view.layer.zPosition = 60.0;
-            DC3DTransform fOffset;
-            fOffset.angle = 0.0f; // Translate the angle by this much
-            fOffset.x = 0.0f; // To translate x set this to 1.0f
-            fOffset.y = 0.0f; // To translate y set this to 1.0f
-            self.transformOffset = fOffset; // Offset, so we can reset to its default position
+            offset.angle = 0.0f; // Translate the angle by this much
+            offset.x = 0.0f; // To translate x set this to 1.0f
+            offset.y = 0.0f; // To translate y set this to 1.0f
             break;
         case DC3DFACE_LEFT:
             self.view.layer.zPosition = 20.0;
-            DC3DTransform lOffset;
-            lOffset.angle = -90.0f;
-            lOffset.x = 0.0f;
-            lOffset.y = 1.0f;        
-            self.transformOffset = lOffset;
+            offset.angle = -90.0f;
+            offset.x = 0.0f;
+            offset.y = 1.0f;        
             break;
         case DC3DFACE_RIGHT:
             self.view.layer.zPosition = 20.0;
-            DC3DTransform rOffset;
-            rOffset.angle = 90.0f;
-            rOffset.x = 0.0f;
-            rOffset.y = 1.0f;
-            self.transformOffset = rOffset;
+            offset.angle = 90.0f;
+            offset.x = 0.0f;
+            offset.y = 1.0f;
             break;
         case DC3DFACE_BACK:
             // You can add it, but it won't work too well..
+            self.view.layer.zPosition = 10.0;
+            offset.angle = 180.0f;
+            offset.x = 0.0f;
+            offset.y = 1.0f;
             break;
         case DC3DFACE_TOP:
             self.view.layer.zPosition = 30.0;
-            DC3DTransform tOffset;
-            tOffset.angle = -90.0f;
-            tOffset.x = 1.0f;
-            tOffset.y = 0.0f;
-            self.transformOffset = tOffset;
+            offset.angle = -90.0f;
+            offset.x = 1.0f;
+            offset.y = 0.0f;
             break;
         case DC3DFACE_BOTTOM:
             self.view.layer.zPosition = 30.0;
-            DC3DTransform bOffset;
-            bOffset.angle = 90.0f;
-            bOffset.x = 1.0f;
-            bOffset.y = 0.0f;        
-            self.transformOffset = bOffset;
+            offset.angle = 90.0f;
+            offset.x = 1.0f;
+            offset.y = 0.0f;        
             break;
     }
+    self.transformOffset = offset; // Offset, so we can reset to its default position
 }
 
 // Init with a nib and its position on the cube

@@ -9,6 +9,10 @@
 #import "DC3DSceneViewController.h"
 #import "DC3DSceneView.h"
 
+#import <QuartzCore/QuartzCore.h>
+
+#import <objc/runtime.h>
+
 @interface DC3DSceneViewController ()
 
 @end
@@ -16,9 +20,10 @@
 @implementation DC3DSceneViewController
 
 // Rotate the DC3DFaceViewController by this much
-- (void)rotate:(DC3DFaceViewController *)viewController withX:(float)x andY:(float)y {
+- (void)rotate:(DC3DFaceViewController *)viewController withX:(float)x andY:(float)y duration:(float)duration {
     // Get its layer
     CALayer *layer = viewController.view.layer;
+    [layer setAnchorPoint:NSMakePoint(0.5f, 0.5f)];
     // Create a new CATransform3D
     CATransform3D transform = CATransform3DIdentity;
     // Set the distance
@@ -33,8 +38,20 @@
     transform = CATransform3DRotate(transform, viewController.transformOffset.angle * M_PI / 180.0f, viewController.transformOffset.x, viewController.transformOffset.y, viewController.transformOffset.z);
     // Move back to the center of the view
     transform = CATransform3DTranslate(transform, 0.0f, 0.0f, (layer.bounds.size.height / 2));
+    // Animate
+    if(duration > 0.0f) {
+       CABasicAnimation *rotate = [CABasicAnimation animationWithKeyPath:@"transform"];
+        rotate.duration = duration;
+        rotate.fromValue=[NSValue valueWithCATransform3D:layer.transform];
+        rotate.toValue=[NSValue valueWithCATransform3D:transform];
+        [layer addAnimation:rotate forKey:@"transform"];
+    }
     // Apply the translation
     [layer setTransform:transform];
+}
+
+- (void)rotate:(DC3DFaceViewController *)viewController withX:(float)x andY:(float)y {
+    [self rotate:viewController withX:x andY:y duration:0.0f];
 }
 
 // Setup with 6 faces
@@ -49,7 +66,7 @@
     if(front) {
         _frontFaceViewController = front;
         [self.view addSubview:_frontFaceViewController.view];
-        [self rotate:_leftFaceViewController withX:0.0f andY:0.0f]; // Apply startup position
+        [self rotate:_frontFaceViewController withX:0.0f andY:0.0f]; // Apply startup position
     }
     
     // Left
@@ -72,14 +89,14 @@
         [self.view addSubview:_backFaceViewController.view];
         [self rotate:_backFaceViewController withX:0.0f andY:0.0f];
     }
-    
+
     // Top
     if(top) {
         _topFaceViewController = top;
         [self.view addSubview:_topFaceViewController.view];
         [self rotate:_topFaceViewController withX:0.0f andY:0.0f];
     }
-    
+
     // Bottom
     if(bottom) {
         _bottomFaceViewController = bottom;
@@ -89,23 +106,29 @@
 }
 
 // Reset all faces to their startup positions
+- (void)resetTransformsWithDuration:(float)duration {
+    [self rotate:_frontFaceViewController withX:0.0f andY:0.0f duration:duration];
+    [self rotate:_leftFaceViewController withX:0.0f andY:0.0f duration:duration];        
+    [self rotate:_rightFaceViewController withX:0.0f andY:0.0f duration:duration];        
+    [self rotate:_backFaceViewController withX:0.0f andY:0.0f duration:duration];        
+    [self rotate:_topFaceViewController withX:0.0f andY:0.0f duration:duration];        
+    [self rotate:_bottomFaceViewController withX:0.0f andY:0.0f duration:duration];
+}
 - (void)resetTransforms {
-    [self rotate:_frontFaceViewController withX:0.0f andY:0.0f];
-    [self rotate:_leftFaceViewController withX:0.0f andY:0.0f];        
-    [self rotate:_rightFaceViewController withX:0.0f andY:0.0f];        
-    [self rotate:_backFaceViewController withX:0.0f andY:0.0f];        
-    [self rotate:_topFaceViewController withX:0.0f andY:0.0f];        
-    [self rotate:_bottomFaceViewController withX:0.0f andY:0.0f];
+    [self resetTransformsWithDuration:0.0f];
 }
 
 // Rotate the cube with all six faces
+- (void)rotateWithX:(float)x andY:(float)y duration:(float)duration {
+    [self rotate:_frontFaceViewController withX:x andY:y duration:duration];
+    [self rotate:_leftFaceViewController withX:x andY:y duration:duration];
+    [self rotate:_rightFaceViewController withX:x andY:y duration:duration];
+    [self rotate:_backFaceViewController withX:x andY:y duration:duration];
+    [self rotate:_topFaceViewController withX:x andY:y duration:duration];
+    [self rotate:_bottomFaceViewController withX:x andY:y duration:duration];
+}
 - (void)rotateWithX:(float)x andY:(float)y {
-    [self rotate:_frontFaceViewController withX:x andY:y];
-    [self rotate:_leftFaceViewController withX:x andY:y];        
-    [self rotate:_rightFaceViewController withX:x andY:y];        
-    [self rotate:_backFaceViewController withX:x andY:y];        
-    [self rotate:_topFaceViewController withX:x andY:y];        
-    [self rotate:_bottomFaceViewController withX:x andY:y];
+    [self rotateWithX:x andY:y duration:0.0f];
 }
 
 @end

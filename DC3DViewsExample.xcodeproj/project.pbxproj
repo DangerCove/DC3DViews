@@ -212,7 +212,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DC3D;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = B5BD09F515AECA40007A7F4B /* Build configuration list for PBXProject "DC3DViewsExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -343,6 +343,7 @@
 		B5BD0A1A15AECA41007A7F4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DC3DViewsExample/DC3DViewsExample-Prefix.pch";
 				INFOPLIST_FILE = "DC3DViewsExample/DC3DViewsExample-Info.plist";
@@ -354,6 +355,7 @@
 		B5BD0A1B15AECA41007A7F4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DC3DViewsExample/DC3DViewsExample-Prefix.pch";
 				INFOPLIST_FILE = "DC3DViewsExample/DC3DViewsExample-Info.plist";

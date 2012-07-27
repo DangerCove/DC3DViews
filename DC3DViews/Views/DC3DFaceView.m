@@ -22,10 +22,6 @@
     return self;
 }
 
-- (void)viewDidMoveToSuperview {
-    self.layer.anchorPoint = NSMakePoint(0.5f, 0.5f);
-}
-
 // Disable interaction
 - (NSView *)hitTest:(NSPoint)aPoint {
     return nil;
